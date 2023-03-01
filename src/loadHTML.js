@@ -10,8 +10,8 @@ export default function load()
     div_header_left.className='header-left'
     const img1=document.createElement('img')
     const img2=document.createElement('img')
-    img1.setAttribute('class','logo')
-    img2.setAttribute('class','logo-name')
+    img1.setAttribute('src','./images/logo')
+    img2.setAttribute('src','./images/logo-name')
     
     const div_header_middle=document.createElement('div')
     div_header_middle.className='header-middle'
