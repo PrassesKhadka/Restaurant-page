@@ -6,95 +6,116 @@
     padding:0;
     outline:0;
 }
-body
+
+@font-face
 {
-    background-image: url(./images/random4.jpg);
-    background-repeat: no-repeat;
-    z-index:1;
-    height:100vh;
-    width:100vw;
+    font-family:Mynerve;
+    src:url(./fonts/Mynerve/Mynerve-Regular.ttf)
 }
-.header
+@font-face
 {
-    position:sticky;
-    top:0;
-    height:5em;
-    width:100vw;
-    background-color: whitesmoke;
-    border:1px solid black;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+    font-family:Shantell;
+    src:url(./fonts/Shantell_Sans/ShantellSans-Italic-VariableFont_BNCE\,INFM\,SPAC\,wght.ttf)
+}
+@font-face {
+    font-family:Lobster ;
+    src: url(./fonts/Lobster/Lobster-Regular.ttf);
+}
+
+h1
+{
+    font-family: Mynerve;
     text-align: center;
 }
-.header-left
+p
 {
+    font-family: Shantell;
+}
+div
+{
+    font-family:Lobster;
+}
+#content
+{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+}
+
+/* For header */
+.header
+{
+    /* A sticky element requires inset value to work:top,bottom,right,left*/
+    position:sticky;
+    top:0;
+    z-index:1;
+    width:100vw;
+    height:80px;
+    background-color: whitesmoke;
     display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap:wrap;
-}
-.logo
-{
-    src:url(./images/logo.png);
-    width:300px;
-    height:100px;
-    z-index:999;
-}
-.logo-name
-{
-    content:url(./images/logo_name.png);
-    width: clamp(300px, 100%, 30vw);
-    z-index:999;
-}
-.header-middle
-{
-    display:flex;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
     flex-wrap: wrap;
 }
-.header-middle button
+/* For header-left */
+.header-left
 {
-    outline:0;
-    border:1px solid black;
-    margin:5px;
-    padding:3px;
+    font-size: x-large;
 }
-
-
-#content
+/* For header-middle */
+.header-middle 
 {
-    position:fixed;
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: red;
-    height:100vh;
-    width:100vw
-    /* clamp(min,preferred,max) */
+    flex-wrap: wrap;
 }
-/* For home page */
+.header-middle span
+{
+    margin:20px;
+    font-size: larger;
+}
+#About:hover
+{
+    cursor: pointer;
+}
+#Restaurants:hover
+{
+    cursor: pointer;
+}
+#Hotels:hover
+{
+    cursor: pointer;
+}
+#Contact:hover
+{
+    cursor: pointer;
+}
+/* For header-right */
+/* #Nothing */
 
-.home
+/* For middle-section starts */
+/* #home.js */
+.middle-section
 {
-   flex:display;
-   flex-direction: column;
-   flex-wrap: wrap;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.home img
+.middle-image img
 {
-    position:fixed;
-    background-image: url(./images/random4.jpg);
-    width:100vw;
-    height:10vh;
-    background-repeat: no-repeat;
-    z-index:1;
-}
-.random-image
-{
-    src:url(./images/random1.jpg);
+    background-image: url(./images/random3.jpeg);
+    background-repeat: none;
     height:100vh;
     width:100vw;
+}
+.middle-intro
+{
+    background-color: grey;
+    height:200px;
+    width:100%;
 }
