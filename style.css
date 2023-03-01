@@ -62,3 +62,39 @@ body
     margin:5px;
     padding:3px;
 }
+
+
+#content
+{
+    position:fixed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height:100vh;
+    width:100vw
+    /* clamp(min,preferred,max) */
+}
+/* For home page */
+
+.home
+{
+   flex:display;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+.home img
+{
+    position:fixed;
+    background-image: url(./images/random4.jpg);
+    width:100vw;
+    height:10vh;
+    background-repeat: no-repeat;
+    z-index:1;
+}
+.random-image
+{
+    src:url(./images/random1.jpg);
+    height:100vh;
+    width:100vw;
+}
