@@ -1,16 +1,18 @@
 import vdom from "./VDOM";
 const content=document.querySelector('#content')
+//Here the middle-section is made 
 export default function loadHome()
 {
-    const home=new vdom('div')
-    .addAttributes({class:'home'})
-    .addChild(new vdom('img').addAttributes({class:'random-image',id:'1'}))
-    .addChild(new vdom('div').addAttributes({class:'description'}).addChild(new vdom('p').addText('Roadhouse is committed to maintaining the high quality and standards that our customers have become accustomed to.')))
-
-
-
-
-
+    //Middle-section
+    const home=new vdom('div').addAttributes({class:'middle-section'})
+    //Middle-image
+    .addChild(new vdom('div').addAttributes({class:'middle-image'})
+    .addChild(new vdom('img')))
+    //Middle-intro
+    .addChild(new vdom('div').addAttributes({class:'middle-intro'})
+    .addChild(new vdom('div').addAttributes({class:'intro-image'}))
+    .addChild(new vdom('div').addAttributes({class:'intro-about'})))
+    //Middle-grid
 
 
    
