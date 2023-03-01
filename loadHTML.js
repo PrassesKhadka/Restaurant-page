@@ -1,5 +1,7 @@
 const content=document.querySelector('#content')
 const body=document.body;
+import logo_image from './images/logo.png';
+import logo_name from './images/logo_name.png';
 
 export default function load()
 {
@@ -10,9 +12,9 @@ export default function load()
     div_header_left.className='header-left'
     const img1=document.createElement('img')
     const img2=document.createElement('img')
-    img1.setAttribute('src','./images/logo')
-    img2.setAttribute('src','./images/logo-name')
-    
+    img1.src=logo_image
+    img2.src=logo_name
+
     const div_header_middle=document.createElement('div')
     div_header_middle.className='header-middle'
     const nav=document.createElement('nav')
