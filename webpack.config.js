@@ -17,7 +17,7 @@ module.exports={
             //To load images 
             {
                 test:/\.(png|svg|jpg|jpeg|gif)$/i,
-                type:'asset/inline',
+                type:'asset',
                 // use:['url-loader']
             },
             //To load Fonts
