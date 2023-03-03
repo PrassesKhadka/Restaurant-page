@@ -47,6 +47,7 @@ export default class vdom
     //This is where all the magic happens-->writing in the HTML page
     //so the object which calls this will have all the 4 necessary conditions:element,attributes,children,innerText
     //Now using this information rendre it in your browser -> DOM manipulation 
+    //#Returns the DOM element #node
     render()
     {
         //Setting element
