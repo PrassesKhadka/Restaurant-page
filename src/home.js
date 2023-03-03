@@ -13,5 +13,4 @@ export default function loadHome()
    
     
     content.appendChild(home.render())
-    return home.render();
 }
