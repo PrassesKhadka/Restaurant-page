@@ -60,7 +60,15 @@ div
     border:0;
     outline:0;
 }
-
+/* When clicked on home i.e when home is active->styled */
+.active-style
+{
+    border-radius: 5px;
+    background-color: #1F51FF;
+    color:white;
+    font-family: Rubik;
+    padding:5px;
+}
 /* For header */
 .header
 {
@@ -199,6 +207,12 @@ div
         width:100vw;
     }
 }
+.grid-transform:hover
+{
+    transform:scale(1.2);
+    overflow:hidden;
+    cursor:grab;
+}
 .grid-1
 {
     background-image: url(./images/temple-tree-resort.jpeg);
@@ -221,7 +235,7 @@ div
 }
 .grid-6
 {
-    background-image: url(./images/gordon-ramsay.jpeg);
+    background-image: url(./images/restaurant4.jpg);
 }
 
 /* #hotels.js */
@@ -235,6 +249,7 @@ div
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
+    text-align: center;
 }
 .hotels-left
 {
@@ -272,7 +287,14 @@ div
     text-align: center;
     z-index:1000;
 }
-
+@media screen and (max-width:425px) {
+    .hotels
+    {
+        display: grid;
+        grid-template-rows: repeat(2,100vw);
+        grid-template-columns: repeat(1,100vh);
+    }
+}
 /* #Contact.js */
 .contact
 {

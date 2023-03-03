@@ -13,5 +13,4 @@ export default function about()
     .addChild(new vdom('p').addAttributes({class:'paragraph'}).addText('977 01 5367885'))
     .addChild(new vdom('p').addAttributes({class:'paragraph'}).addText('977 9863029293'))
     content.appendChild(about.render())
-    return about.render()
 }
