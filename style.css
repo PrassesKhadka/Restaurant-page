@@ -77,13 +77,13 @@ div
     top:0;
     z-index:1000;
     width:100vw;
-    height:80px;
+    height:clamp(80px,25vw,100px);
     background-color: whitesmoke;
     display:flex;
     justify-content:space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding:clamp(2px,3vw,20px);
+    padding:clamp(2px,1vw,20px);
 }
 /* For header-left */
 .header-left
@@ -105,7 +105,7 @@ div
 .header-middle span
 {
     /* Mobile responsive using clamp */
-    margin:clamp(4px,3vw,20px);
+    margin:clamp(2px,1vw,20px);
     font-size: larger;
 }
 #Home:hover
@@ -137,7 +137,8 @@ div
 .middle-section
 {
     left:50%;
-    padding:clamp(2px,10vw,40px);
+    right:15%;
+    padding:clamp(2px,8vw,20px);
     display:flex;
     flex-direction: column;
     justify-content:center;        
@@ -178,6 +179,7 @@ div
     justify-content: center;
     align-items: center;
     flex-wrap:wrap;
+    text-align: center;
     font-family: Rubik;
     color:white;
     opacity:0.8;
@@ -185,28 +187,7 @@ div
     background-repeat: no-repeat;
     background-size: cover;
 }
-@media screen and (max-width:425px) {
-    .header
-    {
-        margin-bottom: 5vh;
-    }
-    .grid
-    {
-        display: flex;
-        justify-content: column;
-        align-items: center;
-        padding:0;
-        margin:0;
-        width: 100vw;
-        height:100vh;
-        flex-wrap: wrap
-    }
-    .style
-    {
-        height:200px;
-        width:100vw;
-    }
-}
+
 .grid-transform:hover
 {
     transform:scale(1.2);
@@ -216,6 +197,7 @@ div
 .grid-1
 {
     background-image: url(./images/temple-tree-resort.jpeg);
+
 }
 .grid-2
 {
@@ -242,19 +224,20 @@ div
 .hotels
 {
     position: relative;
-    height:100vh;
+    height:90vh;
     width:100vw;
     opacity:0.8;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    text-align: center;
 }
+
 .hotels-left
 {
+    position:relative;
     width:50vw;
-    height:100vh;
+    height:90vh;
     background-image: url(./images/hotel-roadhouse.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -265,11 +248,14 @@ div
     justify-content: center;
     align-items: center;
     flex-wrap:wrap;
+    text-align: center;
 }
+
 .hotels-right
 {
+    position:relative;
+    height:90vh;
     width:50vw;
-    height:100vh;
     z-index:-1000;
     background-image: url(./images/hotel2.jpg);
     background-repeat: no-repeat;
@@ -277,24 +263,25 @@ div
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     flex-wrap:wrap;
+    text-align: center;
 }
+
 .font-hotels
 {
     color:white;
     font-family: Rubik;
     text-align: center;
     z-index:1000;
+    opacity:1;
+    font-size: large;
 }
-@media screen and (max-width:425px) {
-    .hotels
-    {
-        display: grid;
-        grid-template-rows: repeat(2,100vw);
-        grid-template-columns: repeat(1,100vh);
-    }
+.black
+{
+    color:black;
 }
+
 /* #Contact.js */
 .contact
 {
@@ -304,14 +291,15 @@ div
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    margin:clamp(5px,5vw,300px);
+    margin:clamp(5px,2vw,100px);
 }
 .grid-contact
 {
     display:grid;
     grid-template-columns:repeat(3,33.33%); 
     grid-template-rows: repeat(2,50%);
-    grid-gap:clamp(3px,10vw,20px);
+    grid-gap:clamp(2px,3vw,10px);
+    margin:clamp(1px,1vw,2px);
     /* height:clamp(50vh,87vh,87vh); */
     /* width: clamp(25px,10vw,60px); */
     /* height: clamp(25px,10vh,60px); */
@@ -323,4 +311,78 @@ div
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+}
+
+/* Responsive design for mobile phones */
+@media screen and (max-width:425px) {
+    .hide
+    {
+        display:none;
+    }
+    .header
+    {
+        height:fit-content;
+    }
+    .header-middle span
+    {
+        font-size: 15px;;
+    }
+    /* adjusting size of about h1 i.e THAMEL,KATHMANDU */
+    .about-header
+    {
+        font-size: large;
+    }
+    /* For Restaurants section */
+    .grid
+    {
+        display: flex;
+        justify-content: column;
+        align-items: center;
+        padding:0;
+        margin:0;
+        width: 100vw;
+        height:100vh;
+        flex-wrap: wrap;
+    }
+    .style
+    {
+        height:200px;
+        width:100vw; 
+        font-size: large;
+    }
+    .style h2
+    {
+        text-align: center;
+        color:white;
+        font-size: small;
+
+    }
+    /* For hotels section */
+    .hotels
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+        height:90vh;
+    }
+    /* For Contact section */
+    .content-reservation
+    {
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+        margin:5px;
+    }
+    .grid-contact
+    {
+        display:grid;
+        grid-template-rows: repeat(3,33.33%);
+        grid-template-columns:repeat(2,50%); 
+        grid-gap:clamp(2px,7vw,20px);
+    }
 }
