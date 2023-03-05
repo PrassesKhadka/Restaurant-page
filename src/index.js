@@ -6,7 +6,7 @@ import about from './about';
 import restaurants from './restaurants';
 import hotels from './hotels';
 import contact from './contact';
-zzzzzz
+
 load()
 loadHome()
 
