@@ -8,10 +8,11 @@ Link to the site: <a href="https://prasseskhadka.github.io/Restaurant-page/dist/
 
 This project was completed for <a href="https://www.theodinproject.com/">The Odin Project</a> Javascript Restaurant Page Assignment. 
 
-
 Skills:
 HTML,CSS,JS,Webpack
 Git GitHub
+
+Further Improvements and Updates:[Updates](#updates)
 
 Lessons Learned:
 
@@ -24,6 +25,8 @@ The goal of this project was to create a restaurant page using primarily JS w/ a
 CSS:
 This page is designed to be responsive.
 Used clamp,flex-box,grid and,Media queries for a responsive layout.
+
+#Updates:
 
 
 
