@@ -12,8 +12,6 @@ Skills:
 HTML,CSS,JS,Webpack
 Git GitHub
 
-Further Improvements and Updates:<a href="updates">Updates</a>
-
 Lessons Learned:
 
 CLI(Command Line Interface):
@@ -26,7 +24,7 @@ CSS:
 This page is designed to be responsive.
 Used clamp,flex-box,grid and,Media queries for a responsive layout.
 
-#Updates:
+#Further Improvement and Updates:
 
 
 
