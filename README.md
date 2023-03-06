@@ -12,7 +12,7 @@ Skills:
 HTML,CSS,JS,Webpack
 Git GitHub
 
-Further Improvements and Updates:[Updates](updates)
+Further Improvements and Updates:<a href="#Updates">Updates</a>
 
 Lessons Learned:
 
