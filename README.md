@@ -6,8 +6,8 @@ HTML,CSS,Vanilla JS
 
 Link to the site: <a href="https://prasseskhadka.github.io/Restaurant-page/dist/index.html">_Live Demo_</a>
 
-This project was completed for The Odin Project Javascript Restaurant Page Assignment. 
-<a href="https://www.theodinproject.com/">The Odin Project</a>
+This project was completed for <a href="https://www.theodinproject.com/">The Odin Project</a> Javascript Restaurant Page Assignment. 
+
 
 Skills:
 HTML,CSS,JS,Webpack
