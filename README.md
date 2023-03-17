@@ -24,8 +24,6 @@ CSS:
 This page is designed to be responsive.
 Used clamp,flex-box,grid and,Media queries for a responsive layout.
 
-#Further Improvement and Updates:
-
 
 
 
